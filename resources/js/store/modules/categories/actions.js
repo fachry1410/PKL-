@@ -10,5 +10,8 @@ export default{
                     commit(mutations.SET_CATEGORIES,res.data.data)
                 }
             })
+            .catch(err=>{
+                console.log(err.response)
+            })
     }
 }
